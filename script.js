@@ -58,6 +58,7 @@ function successfulLookup(position) {
                 name: locData[1][0].trim(),
                 value: null
             }
+            alert(`${loc} - ${dist}`);
             setState({ state: state, district: district, tempState: state });
         })
 }

@@ -2,7 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: #f3f3f3;
 }
 h1{
@@ -91,11 +91,11 @@ h1{
 }
 .left{
     width: 45%;
-    min-width: 450px;
+    min-width: 420px;
 }
 .right{
     width: 45%;
-    min-width: 450px;
+    min-width: 420px;
 }
 .searchBar{
     display: flex;
