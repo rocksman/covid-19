@@ -1,0 +1,213 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    background: #f3f3f3;
+}
+h1{
+    text-transform: uppercase;
+}
+.wrapper{
+    width: 100vw;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* background: url('./bg.png');
+    background-size: cover; */
+}
+.top > h1{
+    font-weight: 500;
+    color: #888;
+}
+.districtContainer{
+    width: 50%;
+}
+.districtContainer > h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.districtBoxes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.districtBoxes > .box > .status{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.districtBoxes > .box > .val{
+    font-size: 42px;
+}
+.confirmed{
+    color: #9B5151;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+.active{
+    color: rgb(89, 91, 179);
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.recovered{
+    color: rgb(80, 161, 100);
+    display: flex;
+    flex-direction: column;
+    order: 3;
+}
+.deceased{
+    color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    order: 4;
+}
+
+.bottom{
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    /* background: #eee; */
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+.left{
+    width: 45%;
+    min-width: 450px;
+}
+.right{
+    width: 45%;
+    min-width: 450px;
+}
+.searchBar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.searchBar > input{
+    width: 90%;
+    margin: auto;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+.suggestions{
+    /* display: none; */
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.suggestion{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+}
+.suggestion:hover{
+    background-color: #efefef;
+}
+
+.stateContainer{
+    width: 90%;
+    margin-bottom: 50px;
+}
+.stateContainer > h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.stateBoxes{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stateBoxes > .box > .status{
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.stateBoxes > .box > .val{
+    font-size: 18px;
+}
+.tableContainer{
+    width: 90%;
+    background-color: #eee;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+table{
+    width: 98%;
+    margin: auto;
+}
+tr{
+    margin-bottom: 50px;
+}
+tr:nth-child(even){
+    background-color: #dedede;
+}
+th{
+    font-size: 12px;
+    color: #888;
+    font-weight: 300;
+    text-align: center;
+    height: 20px;
+}
+th:nth-of-type(1){
+    text-align: left;
+}
+td{
+    text-align: center;
+    font-size: 12px;
+    height: 30px;
+    color: #444;
+}
+td:nth-of-type(1){
+    text-align: left;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .districtContainer{
+        width: 80%;
+    }
+}
