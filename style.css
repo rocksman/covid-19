@@ -2,7 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background: #f3f3f3;
 }
 h1{
@@ -204,7 +204,9 @@ td:nth-of-type(1){
     text-align: left;
 }
 
-
+#myChart{
+    width: 90% !important;
+}
 
 @media only screen and (max-width: 1024px) {
     .districtContainer{
